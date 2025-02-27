@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arka Plan Resmi</title>
+    <style>
+        body {
+            background-image: url('yusuf.png'); /* Resmin doğru yolu buraya eklenmeli */
+            background-size: contain; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+        form {
+            background: rgba(0, 0, 0, 0.7); 
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            width: 320px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            text-align: center;
+            color: azure;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            box-sizing: border-box;
+        }
+        input {
+            box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .radio-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .radio-group input {
+            width: auto;
+        }
+        .yusf{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px; /* Soldan boşluk bırakmak için */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>YUSUF EKİNCİYE BAŞVURU FORMU</h2>
+        
+        <label for="name">İsim:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="sname">Soyisim:</label>
+        <input type="text" id="sname" name="sname" required>
+
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Şifre:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label>Cinsiyet:</label>
+        <div class="radio-group">
+            <input type="radio" id="erkek" name="cinsiyet" value="erkek">
+            <label for="erkek">Erkek</label>
+            
+            <input type="radio" id="kadin" name="cinsiyet" value="kadın">
+            <label for="kadin">Kadın</label>
+            
+            <input type="radio" id="diger" name="cinsiyet" value="diger">
+            <label for="diger">Diğer</label> 
+        </div>
+
+        <button type="submit">Gönder</button>  
+    </form> 
+    
+ <h4 class="yusf">ŞİİRLERİNİZİ BEKLİYORUZ.....</h4>
+</body>
+</html>
